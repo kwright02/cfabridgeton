@@ -1,6 +1,46 @@
 .container {
-    padding: 10px;
     display: flex;
-    flex: 1 1 auto;
-    flex-grow: 1;
+    padding-top: 150px;
+    transition: all .2s ease-in-out;
+}
+
+.fab {
+    color: white; 
+    background-color: #004c6c;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 40px;
+}
+
+
+.fab-text {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    margin-bottom: 15px;
+    opacity: .75;
+}
+
+.menu {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+}
+
+.menu button {
+    width: 150px;
+    margin: 10px;
+}
+
+.menu2 {
+    width: 100%;
+    text-align: center;
+}
+
+.menu2 button {
+    width: 150px;
+    margin: 10px;
 }
