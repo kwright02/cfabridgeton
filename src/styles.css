@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { margin: 0; width: 100%; }
+
+.mat-raised-button, .mat-stroked-button, .mat-flat-button {
+  padding: 0 1.15em;
+  margin: 0 .65em;
+  min-width: 3em;
+  line-height: 36.4px
+}
+  
+.mat-standard-chip {
+  padding: .5em .85em;
+  min-height: 2.5em;
+}
+
+.material-icons {
+  font-size: 24px;
+  font-family: 'Material Icons Outlined', 'Material Icons';  
+}
+
+.mat-badge-content {
+  font-family: 'Roboto';
+}
