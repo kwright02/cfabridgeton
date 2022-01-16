@@ -1,3 +1,21 @@
-<div class="container">
-
+<div *ngIf="bannerOpen" class="banner">
+    <p style="font-size: 32px; font-weight: bold; line-height: 34px;">{{message}} <button mat-icon-button (click)="closeBanner()" style="position: absolute; top: 10px; right: 60px;"><mat-icon style="color: white;">close</mat-icon></button></p>
+</div>
+<div class="container" style="background-color: rgb(229, 231, 235); padding-bottom: 40px;">
+    <img src="../../assets/fplg.jpg" width="100%;" style="position: absolute; top: 64px; z-index: 1;">
+    <div class="content">
+        <p style="font-size: 32px; font-weight: bold; color: #da1a32;">Chick-Fil-A Bridgeton</p>
+        <br>
+        <p style="font-size: 22px; font-weight: bold;">Try a cup of cozy today.<br>Chicken Tortillia Soup.</p>
+        <br>
+        <p style="font-size: 22px; font-weight: bold;">Mobile Order.<br>Earn. Eat.<br>Repeat.</p>
+        <br><br>
+        <p style="font-size: 22px; font-weight: bold;">Follow us on Social Media using the buttons below:</p>
+        <br>
+        <div class="row">
+            <button mat-raised-button color="primary">Facebook</button>
+            <button mat-raised-button color="primary">Instagram</button>
+        </div>
+        <br>
+    </div>
 </div>

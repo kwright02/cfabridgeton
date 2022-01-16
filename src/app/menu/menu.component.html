@@ -1,23 +1,26 @@
 <div class="container">
     <a name="top"></a>
-    <button mat-icon-button *ngIf="windowScrolled" class="fab" (click)="scrollToTop()"><mat-icon>arrow_upward</mat-icon></button>
+    <button mat-icon-button *ngIf="windowScrolled" class="fab" (click)="scrollToTop()"><mat-icon style="color: white;">arrow_upward</mat-icon></button>
     <div *ngIf="windowScrolled" class="fab-text">Back to top</div>
+    <button mat-raised-button color="primary" style="position: absolute; left: 10px; top: 75px; width: 150px;" routerLink="/">
+        <!-- <mat-icon style="margin-left: -10px; margin-right: 10px; color: white;">arrow_back</mat-icon> -->
+        Home</button>
     <div class="menu">
         <button mat-raised-button color="accent" (click)="scrollToBreakfast()">Breakfast Menu</button>
     </div>
     <div style="justify-content: center; align-items: center; text-align: center;">
         <br>
-        <h1 style="font-weight: 500;" name="lunch">Lunch Menu</h1>
+        <p style="font-weight: bold; margin: 10px;" name="lunch">Lunch Menu</p>
         <br>
         <img src="../../assets/Lunch1.png" width="75%;">
         <img src="../../assets/Lunch2.png" width="75%;">
         <br>
-        <a name="breakfast"></a>
+        <a name="breakfast" id="breakfast"></a>
         <br><br><br><br>
         <div class="menu2">
             <button mat-raised-button color="accent" (click)="scrollToTop()">Lunch Menu</button>
         </div>
-        <h1 style="font-weight: 500; margin: 10px;">Breakfast Menu</h1>
+        <p style="font-weight: bold; margin: 10px;">Breakfast Menu</p>
         <br>
         <img src="../../assets/Breakfast.png" width="75%;">
     </div>

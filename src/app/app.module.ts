@@ -12,13 +12,15 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MenuComponent } from './menu/menu.component';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     ToolbarComponent,
-    MenuComponent
+    MenuComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

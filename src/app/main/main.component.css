@@ -2,5 +2,45 @@
     width: 100%;
     display: flex;
     flex: 1 1 auto;
-    
+    /* background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4332107843137255) 47%, rgba(255,255,255,1) 100%); */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content {
+    padding: 60px;
+    border-radius: 8px;
+    margin-top: 140px;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+    height: 100%;
+    /* background: linear-gradient(0deg, rgba(255,255,255,0.500437675070028) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,0.5) 100%); */
+}
+
+.content p {
+    line-height: 26px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: space-around;
+}
+
+.banner {
+    position: fixed;
+    top: 64px;
+    padding: 20px;
+    width: 100%;
+    z-index: 1000;
+    background-color: #004c6c;
+    transition: all 1s ease-in-out;
+}
+
+.banner p {
+    color: white;
 }

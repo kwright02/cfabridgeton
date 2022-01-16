@@ -39,9 +39,10 @@ export class MenuComponent implements OnInit {
   scrollToBreakfast(){
     (function smoothscroll() {
       var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-      if (currentScroll < 2000) {
+      var el = document.getElementById("breakfast");
+      if (currentScroll < MenuComponent.getOffset(el).top) {
           window.requestAnimationFrame(smoothscroll);
-          window.scrollTo(0, currentScroll + (2000/30));
+          window.scrollTo(0, currentScroll + 20);
       } else {
         console.log(currentScroll);
       }
@@ -49,6 +50,14 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  static getOffset(el: any) {
+    const rect = el.getBoundingClientRect();
+    return {
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY
+    };
   }
 
 }
