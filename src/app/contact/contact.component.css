@@ -74,3 +74,24 @@
     color: #da1a32;
     line-height: 32px;
 }
+
+.contact {
+    font-size: 32px; font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) { 
+
+    .contact {
+        font-size: 18px; font-weight: bold;
+        margin-top: 40px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+ }

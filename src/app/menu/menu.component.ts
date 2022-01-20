@@ -39,7 +39,8 @@ export class MenuComponent implements OnInit {
   scrollToBreakfast(){
     (function smoothscroll() {
       var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-      var el = document.getElementById("breakfast");
+      var el = document.getElementById("menu2");
+      console.log("\n\n\n" + MenuComponent.getOffset(el).top + "\n\n\n");
       if (currentScroll < MenuComponent.getOffset(el).top) {
           window.requestAnimationFrame(smoothscroll);
           window.scrollTo(0, currentScroll + 20);

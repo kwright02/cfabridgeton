@@ -1,3 +1,31 @@
 .example-spacer {
-    flex: 1 1 auto;
-  }
+  flex: 1 1 auto;
+}
+
+.small-spacer {
+  width: 10px;
+}
+
+.toolbar {
+  background-color: white; 
+  border-bottom-style: dotted; 
+  border-bottom-width: 2px; 
+  border-bottom-color: rgb(229, 231, 235);
+  height: 64px;
+}
+
+.homeButton {
+  padding: 5px;
+}
+
+.cfalogo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) { .name { display: none;  } .cfalogo { margin-right: 0px; } .navButton { max-width: 75px; min-width: 75px; margin: 4px;} .homeButton { margin-left: -12px;} }

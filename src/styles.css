@@ -29,6 +29,8 @@
   color: white;
 }
 
+@media only screen and (max-width: 600px) { .mat-button-wrapper { font-size: 14px;  } }
+
 html, body { margin: 0; width: 100%; }
 
 .mat-raised-button, .mat-stroked-button, .mat-flat-button {

@@ -1,12 +1,12 @@
-<mat-toolbar style="background-color: white; border-bottom-style: dotted; border-bottom-width: 2px; border-bottom-color: rgb(229, 231, 235);">
-    <button mat-button style="padding: 5px;" (click)="openHome()">
-        <img src="../assets/cfalogo.png" width="40" height="40" style="margin-right: 10px;">
-        <span style="font-weight: bolder;">Chick-Fil-A Bridgeton</span>
+<mat-toolbar class="toolbar">
+    <button mat-button class="homeButton" (click)="openHome()">
+        <img src="../assets/cfalogo.png" class="cfalogo">
+        <span class="name">Chick-Fil-A Bridgeton</span>
     </button>
     <span class="example-spacer"></span>
-    <button mat-raised-button color="accent" (click)="openContact()">Contact</button>
-    <div style="width: 10px;"></div>
-    <button mat-raised-button color="accent" (click)="openMenu()">Menu</button>
-    <div style="width: 10px;"></div>
-    <button mat-raised-button color="primary" (click)="orderOut()">Order</button>
+    <button mat-raised-button class="navButton" color="accent" (click)="openContact()">Contact</button>
+    <div class="small-spacer"></div>
+    <button mat-raised-button class="navButton" color="accent" (click)="openMenu()">Menu</button>
+    <div class="small-spacer"></div>
+    <button mat-raised-button class="navButton" color="primary" (click)="orderOut()">Order</button>
   </mat-toolbar>
